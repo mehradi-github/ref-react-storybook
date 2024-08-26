@@ -1,3 +1,5 @@
+import { DefaultTheme } from "styled-components";
+
 declare module "styled-components" {
   export interface DefaultTheme {
     name: "light" | "dark";
@@ -144,4 +146,16 @@ const typography = {
     medium: "500",
     regular: "400",
   },
+};
+
+export const lightTheme: DefaultTheme = {
+  borderRadius,
+  boxShadow,
+  color,
+  fonts: {
+    family: "NunitoSans, sans-serif",
+  },
+  name: "light",
+  spacing,
+  typography,
 };

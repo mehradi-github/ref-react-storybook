@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky",
-    "pre-commit": "lint-staged"
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.7.0",
-    "@eslint/js": "^9.9.1",
     "@storybook/addon-essentials": "^8.2.9",
     "@storybook/addon-interactions": "^8.2.9",
     "@storybook/addon-links": "^8.2.9",
@@ -30,18 +29,29 @@
     "@storybook/react": "^8.2.9",
     "@storybook/react-vite": "^8.2.9",
     "@storybook/test": "^8.2.9",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^9.9.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.9.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "prettier": "3.3.3",
     "storybook": "^8.2.9",
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.3.0",
+    "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "eslint --fix",
+    "*.{html,md}": "prettier --write"
   }
 }

@@ -174,5 +174,5 @@ export const GlobalStyle = createGlobalStyle(
     .carousel-container {
       touch-action: pan-x;
     }
-  `
+  `,
 );

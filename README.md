@@ -3,6 +3,8 @@
 - [React + TypeScript + Vite + Storybook](#react--typescript--vite--storybook)
   - [Prerequisites](#prerequisites)
     - [Git hooks](#git-hooks)
+    - [Emmet](#emmet)
+    - [Storybook](#storybook)
 
 ## Prerequisites
 
@@ -19,6 +21,10 @@ npx husky init
 node --eval "fs.writeFileSync('.husky/pre-commit','npx lint-staged\n')"
 
 ```
+
+### [Emmet](https://github.com/mehradi-github/ref-react#emmet)
+
+### Storybook
 
 ```sh
 npx storybook@latest init

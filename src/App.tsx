@@ -7,8 +7,8 @@ import { darkTheme, lightTheme } from "./styles/theme";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 function App() {
-  const { value } = useDarkMode(false, { global: globalThis.window });
-  const theme = value ? darkTheme : lightTheme;
+  const { value } = useDarkMode(false, { global: globalThis.window })
+  const theme = value ? darkTheme : lightTheme
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>

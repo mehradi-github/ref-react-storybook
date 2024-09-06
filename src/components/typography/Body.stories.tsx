@@ -17,7 +17,6 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     children: '',
-    color:'#110'
   },
   render: ({ children }) => (
     <div>

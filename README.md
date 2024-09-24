@@ -5,6 +5,7 @@
     - [Git hooks](#git-hooks)
     - [Emmet](#emmet)
     - [Storybook](#storybook)
+    - [storybook/addon-designs](#storybookaddon-designs)
 
 ## Prerequisites
 
@@ -31,4 +32,12 @@ npx storybook@latest init
 
 npm i styled-components
 
+```
+
+### storybook/addon-designs
+
+[A Storybook addon that embed Figma](https://storybook.js.org/addons/@storybook/addon-designs) or websites in the addon panel for better design-development workflow.
+
+```sh
+ npx install @storybook/addon-designs
 ```

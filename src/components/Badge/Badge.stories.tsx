@@ -10,7 +10,7 @@ const meta={
     },
     parameters: {
         design: {
-          type: "figma",
+          type: "figspec",
           url: "https://www.figma.com/design/sOfkw8blGH6Ag1xClHWLaG/Mealdrop-github?node-id=1906-3469&t=M5q50hh2IRP88O2j-4",
         },
       },    
@@ -25,4 +25,5 @@ export const Primary:Story={
         text:'Primary Comfort food'
     }
 }
+
 

@@ -59,6 +59,8 @@ myStory.parameters = {
 };
 ```
 
+Figma Personal [Access Token](https://www.figma.com/developers/api#access-tokens).
+
 ```sh
  STORYBOOK_FIGMA_ACCESS_TOKEN=xxxx npm run storybook
 ```

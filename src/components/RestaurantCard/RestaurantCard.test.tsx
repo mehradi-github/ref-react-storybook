@@ -14,3 +14,8 @@ describe('RestaurantCard', () => {
     expect(screen.getByText('Burger Kingdom')).toBeInTheDocument()
   })
 })
+
+test('should provide a loading skeleton', async () => {
+  await Loading.run()
+  expect(screen.getByTestId('loading')).toBeInTheDocument()
+})

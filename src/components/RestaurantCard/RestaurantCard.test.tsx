@@ -5,7 +5,7 @@ import { composeStories } from '@storybook/react'
 
 import * as stories from './RestaurantCard.stories'
 
-const { Default} = composeStories(stories)
+const { Default,Loading} = composeStories(stories)
 
 describe('RestaurantCard', () => {
   test('should render correctly', async () => {
